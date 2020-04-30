@@ -1,0 +1,179 @@
+/* GENERAL */
+body {
+  font-family: sans-serif;
+}
+/* END GENERAL */
+
+/* HEADER */
+/* Menu */
+header .container .nav {
+  font-size: 10px;
+  font-weight: 400;
+}
+header .container .nav {
+  padding: 25px 0;
+}
+header .container .nav .logo {
+  height: 15px;
+  padding-left: 15px;
+}
+header .list {
+  text-align: right;
+}
+header .list li {
+  display: inline-block;
+}
+header .container .nav .menu li {
+  padding: 0 15px;
+}
+header .container .nav .language li {
+  padding: 0 5px;
+  border-right: 1px solid black;
+}
+header .container .nav .language li:last-child  {
+  border: none;
+}
+/* END Menu */
+
+/* Jumbotron */
+header .jumbo {
+  height: 600px;
+  background-image: url(../img/header/slack-imgs.com.jpeg);
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+header .container .jumbo .cta {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .container .jumbo .cta h1 {
+  font-size: 50px;
+  font-weight: 550;
+}
+header .container .jumbo .cta p {
+  margin: 15px 0;
+}
+/* END Jumbotron */
+/* END HEADER */
+
+/* MAIN */
+/* Section */
+section .container {
+margin: 100px auto;
+
+}
+section .container .go,
+section .container .bike {
+  background-color: #fafafa;
+  text-align: center;
+  padding-top: 45px;
+  line-height: 2.5;
+}
+section .container .go span,
+section .container .bike span {
+  font-size: 30px;
+}
+section .container .go img,
+section .container .bike img {
+  width: 100%;
+  margin: 10px 0;
+}
+section .container .go {
+  margin-right: 15px;
+}
+section .container .bike {
+  margin-left: 15px;
+}
+
+/* END Section */
+
+/* END MAIN */
+
+
+
+/* MEDIA QUERY */
+/* display tablet (max 991px) */
+@media all and (min-width: 769px) and (max-width: 991px) {
+
+  /* HEADER */
+  /* header {
+    width: 991px;
+  } */
+  header .container .nav {
+    padding: 15px 0;
+  }
+  header .container .jumbo {
+    height: 400px;
+  }
+  header .container .jumbo .cta h1 {
+    font-size: 40px;
+  }
+  header .container .nav .menu,
+  header .container .nav .language {
+    display: none;
+  }
+  /* END HEADER */
+
+  /* MAIN */
+  /* Section */
+  section .container {
+  margin: 50px auto;
+  }
+  section .container .go,
+  section .container .bike {
+    padding-top: 35px;
+    line-height: 2;
+  }
+
+  /* END Section */
+  /* END MAIN */
+
+}
+/* END display tablet (max 991px) */
+
+/* display tablet (max 768px) */
+@media all and (max-width: 768px) {
+
+  /* HEADER */
+  header .container .nav {
+    padding: 15px 0;
+  }
+  header .container .jumbo {
+    height: 350px;
+  }
+  header .container .jumbo .cta h1 {
+    font-size: 30px;
+  }
+  header .container .jumbo .apps img {
+    height: 40px;
+  }
+  header .container .nav .menu,
+  header .container .nav .language {
+    display: none;
+  }
+
+  /* END HEADER */
+
+  /* MAIN */
+  /* Section */
+  section .container {
+  margin: 30px auto;
+  }
+  section .container .go,
+  section .container .bike {
+    padding-top: 25px;
+    line-height: 1.5;
+  }
+  section .container .go img,
+  section .container .bike img {
+    width: 50%;
+  }
+  /* END Section */
+  /* END MAIN */
+
+}
+/* END display tablet (max 768px) */
