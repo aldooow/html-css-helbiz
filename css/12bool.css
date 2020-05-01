@@ -39,8 +39,7 @@
 /* end general */
 
 
-@media all and (max-width: 768px)) {
-
+@media all and (max-width: 768px) {
   /* columns */
   .col-xs-1 {
     width: calc( (100% / 12) * 1 );
