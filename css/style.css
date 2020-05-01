@@ -1,6 +1,6 @@
 /* GENERAL */
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
 body h1 {
@@ -18,6 +18,11 @@ body h3 {
 .list li {
   display: inline-block;
 }
+.fab,
+.fas {
+  color: black;
+  font-size: 25px;
+}
 /* END GENERAL */
 
 /* HEADER */
@@ -31,11 +36,6 @@ header .nav .logo {
   height: 15px;
   padding-left: 15px;
 }
-header .nav .hamburger{
-  display: none;
-  background: red;
-}
-
 header .list {
   text-align: right;
 }
@@ -97,8 +97,7 @@ main .block-1 .go {
 main .block-1 .bike {
   margin-left: 15px;
 }
-
-/* END MAIN Block-2 */
+/* END MAIN Block-1 */
 
 /* MAIN Block-2 */
 main .block-2 {
@@ -119,7 +118,6 @@ main .block-2 .iphone img {
   bottom: -350px;
   margin: auto;
 }
-
 /* END MAIN Block-2 */
 
 /* MAIN Block-3 */
@@ -183,11 +181,6 @@ main .block-4 .container {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.fab {
-  color: green;
-  height: 2000px;
-}
 /* END MAIN Block-4 */
 /* END MAIN */
 
@@ -198,13 +191,11 @@ footer {
   color: white;
   height: 700px;
   font-size: 15px;
-
 }
 footer .map,
 footer .copyright {
   padding: 50px;
 }
-
 footer .map h4 {
   padding-bottom: 10px;
 }
@@ -212,7 +203,6 @@ footer .map ul {
   color: grey;
   list-style-type: none;
 }
-
 footer .copyright {
   margin: 70px auto;
   border: 1px solid grey;
@@ -229,8 +219,10 @@ footer .apps img {
   border: 0.7px solid grey;
   border-radius: 5px;
 }
-
-
+footer .fab {
+  color: white;
+  font-size: 15px;
+}
 /* END FOOTER */
 
 
@@ -239,19 +231,15 @@ footer .apps img {
 
 /* display tablet (max 991px) */
 @media all and (min-width: 769px) and (max-width: 991px) {
-
+  /* GENERAL */
   body h2 {
     line-height: 1;
     font-size: 35px;
     margin: 25px;
   }
+  /* EN GENERAL */
+
   /* HEADER */
-  /* header {
-    width: 991px;
-  } */
-  header .nav .hamburger{
-    display: inline-block;
-  }
   header .nav .container {
     padding: 15px 0;
   }
@@ -268,7 +256,7 @@ footer .apps img {
   /* END HEADER */
 
   /* MAIN */
-  /* MAIN Section */
+  /* MAIN Block-1 */
   main .block-1 .container {
   margin: 50px auto;
   }
@@ -281,11 +269,11 @@ footer .apps img {
   main .block-1 .bike span {
     font-size: 25px;
   }
-  /* END MAIN Section */
+  /* END MAIN Block-1 */
 
   /* MAIN Block-2 */
   main .block-2 {
-    background: lightblue;
+    background: linear-gradient(#d8e5ef,#bea48d) 50% no-repeat;
     position: relative;
     height: 400px;
   }
@@ -330,7 +318,6 @@ footer .apps img {
   main .block-3 .find-us .cta {
     padding-top: 10px;
   }
-
   /* END MAIN Block-3 */
 
   /* MAIN Block-4 */
@@ -345,22 +332,17 @@ footer .apps img {
 
 /* display Smartphone (max 768px) */
 @media all and (max-width: 768px) {
+  /* GENERAL */
   body h2 {
     line-height: 1;
     font-size: 25px;
     margin: 5px;
   }
+  /* END GENERAL */
 
   /* HEADER */
   header .nav .container {
     padding: 15px 0;
-  }
-  header .nav .hamburger{
-    display: inline-block;
-  }
-  header .nav .menu,
-  header .nav .language {
-    display: none;
   }
   header .jumbo {
     height: 350px;
@@ -374,7 +356,7 @@ footer .apps img {
   /* END HEADER */
 
   /* MAIN */
-  /* Section */
+  /* MAIN Block-1 */
   main .block-1 .container {
   margin: 30px auto;
   }
@@ -391,11 +373,11 @@ footer .apps img {
   main .block-1 .bike span {
     font-size: 25px;
   }
-  /* END Section */
+  /* END MAIN Block-1 */
 
   /* MAIN Block-2 */
   main .block-2 {
-    background: lightblue;
+    background: linear-gradient(#d8e5ef,#bea48d) 50% no-repeat;
     max-height: 200px;
   }
   main .block-2 .container {
@@ -409,9 +391,6 @@ footer .apps img {
     width: 100%;
   }
   main .block-2 .back {
-    display: none;
-  }
-  main .block-2 .iphone {
     display: none;
   }
   /* END MAIN Block-2 */
@@ -453,6 +432,16 @@ footer .apps img {
   }
   /* END MAIN Block-4 */
   /* END MAIN */
+
+  /* FOOTER */
+  footer .map,
+  footer .copyright {
+    padding: 20px;
+  }
+  footer .copyright {
+    margin: 30px 0;
+  }
+  /* END FOOTER */
 
 }
 /* END display smartphone (max 768px) */
