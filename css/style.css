@@ -15,6 +15,13 @@ body h3 {
   font-size: 30px;
   font-weight: bolder;
 }
+a {
+  text-decoration: none;
+  color: #016fc8;
+}
+a:hover {
+  text-decoration: underline;
+}
 .list li {
   display: inline-block;
 }
@@ -26,7 +33,14 @@ body h3 {
 /* END GENERAL */
 
 /* HEADER */
+
 /* Menu */
+header .nav {
+  position: fixed;
+  z-index: 3;
+  background: white;
+  width: 100%;
+}
 header .nav .container {
   font-size: 10px;
   font-weight: 400;
@@ -66,35 +80,34 @@ header .jumbo .cta {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header .jumbo
 /* END Jumbotron */
 /* END HEADER */
 
 /* MAIN */
 /* MAIN Block-1 */
 main .block-1 .container {
-margin: 100px auto;
+  margin: 100px auto;
 }
-main .block-1 .go,
-main .block-1 .bike {
+main .block-1 #go,
+main .block-1 #bike {
   background-color: #fafafa;
   text-align: center;
   padding-top: 45px;
   line-height: 2.5;
 }
-main .block-1 .go span,
-main .block-1 .bike span {
+main .block-1 #go span,
+main .block-1 #bike span {
   font-size: 30px;
 }
-main .block-1 .go img,
-main .block-1 .bike img {
+main .block-1 #go img,
+main .block-1 #bike img {
   width: 100%;
   margin: 10px 0;
 }
-main .block-1 .go {
+main .block-1 #go {
   margin-right: 15px;
 }
-main .block-1 .bike {
+main .block-1 #bike {
   margin-left: 15px;
 }
 /* END MAIN Block-1 */
@@ -125,40 +138,47 @@ main .block-3 {
   color: white;
   text-align: center;
 }
-main .block-3 .smart-mobility {
+main .block-3 a {
+  color: white;
+  display: inline-block;
+  padding: 30px;
+  font-size: 20px;
+}
+main .block-3 #smart-mobility {
   height: 450px;
   position: relative;
   background-size: cover;
   background-image: url(../img/block-3/ScooterHelbiz-2400.jpg);
 }
-main .block-3 .smart-mobility .cta {
+main .block-3 #smart-mobility .cta {
   width: 30%;
   position: absolute;
   top: 30%;
   left: 60%;
 }
-main .block-3 .get-app,
-main .block-3 .find-us {
+main .block-3 #get-app,
+main .block-3 #find-us {
   width: calc(50% - 20px);
   margin: 40px 0;
   height: 700px;
+
 }
-main .block-3 .get-app .cta,
-main .block-3 .find-us .cta {
-  padding-top: 100px;
+main .block-3 #get-app .cta,
+main .block-3 #find-us .cta {
+  padding: 100px 100px;
 }
-main .block-3 .get-app {
+main .block-3 #get-app {
   position: relative;
   margin-right: 40px;
   background: linear-gradient(#41566a,#252f38) 50% no-repeat;
 }
-main .block-3 .get-app .iphone-2 {
+main .block-3 #get-app .iphone-2 {
   position: absolute;
   width: 50%;
   bottom: 0;
   left: 25%;
 }
-main .block-3 .find-us {
+main .block-3 #find-us {
   background-size: cover;
   background-image: url(../img/block-3/Cities-1500.jpg);
 }
@@ -260,13 +280,13 @@ footer .fab {
   main .block-1 .container {
   margin: 50px auto;
   }
-  main .block-1 .go,
-  main .block-1 .bike {
+  main .block-1 #go,
+  main .block-1 #bike {
     padding-top: 35px;
     line-height: 2;
   }
-  main .block-1 .go span,
-  main .block-1 .bike span {
+  main .block-1 #go span,
+  main .block-1 #bike span {
     font-size: 25px;
   }
   /* END MAIN Block-1 */
@@ -296,27 +316,31 @@ footer .fab {
   /* END MAIN Block-2 */
 
   /* MAIN Block-3 */
-  main .block-3 .smart-mobility {
+  main .block-3 a {
+    padding: 0;
+    font-size: 10px;
+  }
+  main .block-3 #smart-mobility {
     height: 250px;
     margin: 10px 0;
   }
-  main .block-3 .smart-mobility .cta {
+  main .block-3 #smart-mobility .cta {
     width: 50%;
     top: 10%;
     left: 40%;
   }
-  main .block-3 .get-app,
-  main .block-3 .find-us {
+  main .block-3 #get-app,
+  main .block-3 #find-us {
     width: calc(50% - 5px);
     margin: 0;
     height: 400px;
   }
-  main .block-3 .get-app {
+  main .block-3 #get-app {
     margin-right: 10px;
   }
-  main .block-3 .get-app .cta,
-  main .block-3 .find-us .cta {
-    padding-top: 10px;
+  main .block-3 #get-app .cta,
+  main .block-3 #find-us .cta {
+    padding: 10px 10px;
   }
   /* END MAIN Block-3 */
 
@@ -360,17 +384,17 @@ footer .fab {
   main .block-1 .container {
   margin: 30px auto;
   }
-  main .block-1 .go,
-  main .block-1 .bike {
+  main .block-1 #go,
+  main .block-1 #bike {
     padding-top: 25px;
     line-height: 1.5;
   }
-  main .block-1 .go img,
-  main .block-1 .bike img {
+  main .block-1 #go img,
+  main .block-1 #bike img {
     width: 50%;
   }
-  main .block-1 .go span,
-  main .block-1 .bike span {
+  main .block-1 #go span,
+  main .block-1 #bike span {
     font-size: 25px;
   }
   /* END MAIN Block-1 */
@@ -396,28 +420,28 @@ footer .fab {
   /* END MAIN Block-2 */
 
   /* MAIN Block-3 */
-  main .block-3 .smart-mobility {
+  main .block-3 .cta p {
+    display: none;
+  }
+  main .block-3 #smart-mobility {
     width: 100%;
     height: 150px;
     margin: 10px 0;
   }
-  main .block-3 .smart-mobility .cta {
+  main .block-3 #smart-mobility .cta {
     width: 50%;
     line-height: 1;
     font-size: 15px;
     top: 20%;
     left: 40%;
   }
-  main .block-3 .cta p {
-    display: none;
-  }
-  main .block-3 .get-app,
-  main .block-3 .find-us {
+  main .block-3 #get-app,
+  main .block-3 #find-us {
     width: 100%;
     height: 250px;
     margin: 5px 0;
   }
-  main .block-3 .get-app .iphone-2 {
+  main .block-3 #get-app .iphone-2 {
     position: absolute;
     width: 25%;
     bottom: 0;
